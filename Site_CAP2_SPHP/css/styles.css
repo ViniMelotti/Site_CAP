@@ -94,6 +94,33 @@ address { font-style: normal; }
 
 .brand img { width: 105px; height: 40px; display: block; }
 
+.anniversary-badge {
+  display: inline-block;
+  margin-left: 12px;
+  padding: 5px 8px;
+  border: 1px solid var(--brown-dark);
+  color: var(--brown-dark);
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transform-origin: left center;
+  animation: badge-reveal 600ms 350ms ease-out both;
+}
+
+@keyframes badge-reveal {
+  from { transform: scaleX(0); opacity: 0; }
+  to { transform: scaleX(1); opacity: 1; }
+}
+
+@media (max-width: 780px) {
+  .anniversary-badge { display: none; }
+}
+
 .primary-nav { display: flex; align-items: center; gap: clamp(20px, 2.6vw, 42px); }
 
 .primary-nav > a:not(.button) {
@@ -164,6 +191,8 @@ h1 em, h2 em { font-style: normal; font-weight: 400; }
 .section-heading h2 { margin-bottom: 0; font-size: clamp(44px, 4.35vw, 62px); letter-spacing: -0.025em; line-height: 1.1; }
 .section-heading--light h2 { color: var(--cream); }
 .section-heading__description { max-width: 555px; margin: 28px 0 0; color: rgba(245, 239, 228, 0.66); font-size: 17px; font-weight: 300; line-height: 1.8; }
+
+.anniversary-banner .section-heading { margin-bottom: 0; text-align: center; }
 
 .wood-selector { --active-wood: #c9a87c; display: flex; min-height: 488px; overflow: hidden; box-shadow: 0 20px 28px rgba(61, 36, 24, 0.14); }
 .wood-feature { position: relative; flex: 1 1 48%; overflow: hidden; background: #795943; }
