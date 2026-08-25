@@ -97,16 +97,11 @@ address { font-style: normal; }
 .anniversary-badge {
   display: inline-block;
   margin-left: 12px;
-  padding: 5px 8px;
-  border: 1px solid var(--brown-dark);
-  color: var(--brown-dark);
+  color: var(--brown-deep);
   font-family: var(--font-display);
-  font-size: 10px;
+  font-size: 20px;
   font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: 0.05em;
-  text-align: center;
-  text-transform: uppercase;
+  line-height: 1;
   white-space: nowrap;
   transform-origin: left center;
   animation: badge-reveal 600ms 350ms ease-out both;
